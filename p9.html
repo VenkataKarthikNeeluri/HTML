@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>MARQUEE TAG</title>
+    </head>
+    <body>
+        <center>
+            <h1>MARQUEE TAG...!</h1>
+        </center>
+
+        <hr>
+
+        <marquee>THIS IS A MARQUEE TAG..!</marquee>
+        <marquee><a href="#">THIS IS A MARQUEE TAG...!</a></marquee>
+        <marquee bgcolor="teal">THIS IS A MARQUEE TAG...!</marquee>
+
+        <br><hr><br>
+
+        <marquee behavior="alternate" bgcolor="skyblue">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br>
+        <marquee behavior="scroll" bgcolor="skyblue">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br>
+        <marquee behavior="slide" bgcolor="skyblue">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br><hr>
+
+        <marquee direction="right" bgcolor="red">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br>
+        <marquee direction="left" bgcolor="red">THIS IS A MARQUEE TAG...!</marquee>
+
+        <br><br>
+        <marquee direction="up" bgcolor="red">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br>
+        <marquee direction="down" bgcolor="red">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br><hr>
+
+        <marquee bgcolor="green" scrollamount="1">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br>
+        <marquee bgcolor="green" scrollamount="20">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br>
+        <marquee bgcolor="green" scrollamount="10">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br>
+        <marquee bgcolor="green" scrollamount="5" onmousemove="stop()" onmouseleave="start()" id="test">THIS IS A MARQUEE TAG...!</marquee>
+
+        <script>
+            document.getElementById("test").onmouseover =function(){
+                document.getElementById("test").stop();
+              };
+
+              document.getElementById("test").onmouseover =function(){
+                document.getElementById("test").start();
+              };
+        </script>
+        <!-- <script>
+            function start(){
+                document.getElementById("test").start();
+            }
+            start();
+            function stop(){
+                document.getElementById("test").stop();
+            }
+            stop();
+        </script> -->
+    </body>
+</html>
